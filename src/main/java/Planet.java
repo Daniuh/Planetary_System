@@ -16,9 +16,9 @@ public class Planet  extends FatherPlanetarySystem{
 
     @Override
     public void gravitationalPull() {
-        ditance = Math.pow(this.DistanceSun(), 2);
-        F = this.Gravity() * ((this.Mass() * massSun) / ditance);
-        System.out.println("\nLa atracción gravitatoria entre: " +this.Name()+ " y el Sol \n" +
+        ditance = Math.pow(this.getDistanceSun(), 2);
+        F = this.getGravity() * ((this.getMass() * massSun) / ditance);
+        System.out.println("\nLa atracción gravitatoria entre: " +this.getName()+ " y el Sol \n" +
                             "Es de: " +F);
     }
 
@@ -27,12 +27,12 @@ public class Planet  extends FatherPlanetarySystem{
     @Override
     public String toString()
     {
-        return "\nNombre Planeta: " + this.Name() +
-                "\nId: " + this.Id() +
-                "\nMasa: " + this.Mass() + " Kg" +
-                "\nDensidad: " + this.Density() + " g/cm³" +
-                "\nDiámetro: " + this.Diameter() + " km" +
-                "\nGravedad: " + this.Gravity() + " m/s²" +
-                "\nDistancia al Sol: " + this.DistanceSun() + " km";
+        return "\nNombre Planeta: " + this.getName() +
+                "\nId: " + this.getId() +
+                "\nMasa: " + this.getMass() + " Kg" +
+                "\nDensidad: " + this.getDensity() + " g/cm³" +
+                "\nDiámetro: " + this.getDiameter() + " km" +
+                "\nGravedad: " + this.getGravity() + " m/s²" +
+                "\nDistancia al Sol: " + this.getDistanceSun() + " km";
     }
 }

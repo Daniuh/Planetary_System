@@ -10,7 +10,7 @@ public abstract class FatherPlanetarySystem {
     private final Integer id;
     private final String name;
     private final Double gravity;
-    public static Integer generateCodePlayer = 0;
+    public static Integer generateCodePlayer = 1;
 
     public FatherPlanetarySystem(String name, Double mass, Double density, Double diameter, Double gravity, Double distanceSun) {
         this.name = name;
@@ -24,31 +24,31 @@ public abstract class FatherPlanetarySystem {
 
     //Estos métodos get sirven para poder acceder a las propiedades que son utilizadas en las clases hijas.
 
-    public Double Density() {
+    public Double getDensity() {
         return density;
     }
 
-    public Double Diameter() {
+    public Double getDiameter() {
         return diameter;
     }
 
-    public Double DistanceSun() {
+    public Double getDistanceSun() {
         return distanceSun;
     }
 
-    public Double Mass() {
+    public Double getMass() {
         return mass;
     }
 
-    public Integer Id() {
+    public Integer getId() {
         return id;
     }
 
-    public String Name() {
+    public String getName() {
         return name;
     }
 
-    public Double Gravity(){
+    public Double getGravity(){
         return gravity;
     }
 
